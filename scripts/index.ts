@@ -33,7 +33,18 @@
         if (!mobileNumber) {
             return (mobileErrorElement.innerText = 'Mobile number is mandatory')
         }
-        const filteredNumber = +mobileNumber.replace(/\D/g, '')
+
+        // Try to tackle user introduced errors
+        // Ignore +91 and 91 if present again in the Mobile number input
+        const validatedNumber = (+mobileNumber.replace(/\D/g, '')).toString();
+        let filteredNumber = validatedNumber;
+        if (validatedNumber.length > 11 ) {
+            if (validatedNumber.length == 12 && validatedNumber.startsWith('91')) {
+                filteredNumber = validatedNumber.substr(2);
+            } else if (validatedNumber.length == 13 && validatedNumber.startsWith('+91')) {
+                filteredNumber = validatedNumber.substr(3);
+            }
+        }
         const filteredCountryCode = +countryCodeInput.value.replace(/\D/g, '')
         if (!filteredNumber || !filteredCountryCode) {
             return (mobileErrorElement.innerText = `Provide valid ${
@@ -45,16 +56,7 @@
                 .value || '',
         )
         const link = `https://wa.me/${filteredCountryCode}${filteredNumber}?text=${textMessage}`
-
-        if (isDesktop) {
-            qrWrapperContainer && qrWrapperContainer.classList.remove('hide')
-            new (window as any).QRious({
-                element: document.getElementById('qr'),
-                value: link,
-            })
-        } else {
-            window.open(link, '_blank')
-        }
+        window.open(link, '_blank')
     })
     ;(document.getElementById(
         'facebook_share',
