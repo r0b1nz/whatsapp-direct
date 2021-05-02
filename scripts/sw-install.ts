@@ -20,7 +20,7 @@ window.onload = function () {
         'beforeinstallprompt',
         (installPrompt: ServiceWorkerEvent) => {
             installPrompt.preventDefault()
-            showToast('Click this for quick access WhatsApp Direct!')
+            showToast('Click this to quick access WhatsApp Quick!')
             toastElement.addEventListener('click', () => {
                 hideToast()
                 installPrompt.prompt()
@@ -29,13 +29,13 @@ window.onload = function () {
                     .then((choiceResult: ServiceWorkerInstallResult) => {
                         if (choiceResult.outcome !== 'accepted') {
                             showToast(
-                                'Click this for quick access WhatsApp Direct!',
+                                'Click this to quick access WhatsApp Quick!',
                             )
                         }
                     })
                     .catch(() => {
                         showToast(
-                            'Click this for quick access WhatsApp Direct!',
+                            'Click this to quick access WhatsApp Quick!',
                         )
                     })
             })

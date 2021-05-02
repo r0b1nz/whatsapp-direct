@@ -4,7 +4,7 @@
 # WhatsAppDirect!
 
 An ultra-lite web app that lets you message/call on #WhatsApp without adding the number to your contacts list.<br/>
-### Visit: https://whatsapp.ashish.link
+### Visit: https://r0b1nz.github.io/whatsapp-direct/
 
 # Getting Started
 
@@ -35,7 +35,7 @@ Navigate to the root directory and use: <br/>
 ![PWA Desktop][pwa desktop]
 ![qrcode desktop][qrcode desktop]
 
-[pwa mobile]: https://github.com/ashish-r/whatsapp-direct/blob/master/screenshots/Screenshot_20191011-042640.jpeg
-[pwa update]: https://github.com/ashish-r/whatsapp-direct/blob/master/screenshots/Screenshot_20191011-042616.jpeg
-[pwa desktop]: https://github.com/ashish-r/whatsapp-direct/blob/master/screenshots/Screenshot%20from%202019-10-11%2004-24-50.jpeg
-[qrcode desktop]: https://github.com/ashish-r/whatsapp-direct/blob/master/screenshots/Screenshot%202020-08-01%20at%2011.00.17%20PM.png
+[pwa mobile]: https://github.com/r0b1nz/whatsapp-direct/blob/master/screenshots/Screenshot_20191011-042640.jpeg
+[pwa update]: https://github.com/r0b1nz/whatsapp-direct/blob/master/screenshots/Screenshot_20191011-042616.jpeg
+[pwa desktop]: https://github.com/r0b1nz/whatsapp-direct/blob/master/screenshots/Screenshot%20from%202019-10-11%2004-24-50.jpeg
+[qrcode desktop]: https://github.com/r0b1nz/whatsapp-direct/blob/master/screenshots/Screenshot%202020-08-01%20at%2011.00.17%20PM.png

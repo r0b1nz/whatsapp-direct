@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ashish-r/whatsapp-direct.git"
+        "url": "git+https://github.com/r0b1nz/whatsapp-direct.git"
     },
     "keywords": [
         "pwa",
@@ -23,12 +23,12 @@
         "whatsapp",
         "whatsapp-direct"
     ],
-    "author": "Ashish Ranjan",
+    "author": "Robin Gautam",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/ashish-r/whatsapp-direct/issues"
+        "url": "https://github.com/r0b1nz/whatsapp-direct/issues"
     },
-    "homepage": "https://whatsapp.ashish.link",
+    "homepage": "https://r0b1nz.github.io/whatsapp-direct/",
     "devDependencies": {
         "gh-pages": "^3.1.0",
         "grunt": "^1.0.4",
